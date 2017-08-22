@@ -1,1 +1,1 @@
-start cmd.exe /k "python C:\Programming\Python\Discordbob\discordwrapper.py"
+start cmd.exe /k "python discordwrapper.py"

@@ -7,7 +7,7 @@ def sub():
     print("Creating new subprocess")
     _p = subprocess.Popen([
     'python',
-    "C:\Programming\Python\Discordbob\discordbot.py",
+    "discordbot.py",
     ],
     shell = True
     )
