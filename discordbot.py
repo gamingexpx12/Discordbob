@@ -2,6 +2,7 @@ import discord
 import asyncio
 import logging
 import atexit
+import clientkey
 import responses as r
 from discord.ext.commands import Bot
 from discord.ext import commands
@@ -77,4 +78,6 @@ def goodbye():
     client.close()
     print("sockets closed")
 
-client.run("MzQ1ODM5NjU5NTQyMzgwNTQ4.DHBJNA.2wqxwkYg9HS_1QHORXeG4VuZ8Vg")
+key = clientkey.key
+print(key)
+client.run(key)
