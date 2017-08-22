@@ -1,5 +1,5 @@
 import random
-import botdb as db
+import botdb
 from shared import Relation
 
 def _getrandom(list_):
@@ -9,7 +9,7 @@ def _getrandom(list_):
 
 #Get relationship with user
 def relationwith(member):
-    mem = db.findmember(member)
+    mem = botdb.findmember(member)
     if mem is not None:
         return mem.relationship
 
@@ -36,7 +36,7 @@ def getscold():
 
 def getname(member):
     name = str(member)
-    botdb.findmember()
+    botdb.findmember(member)
     if name in nicknames:
         return nicknames[name]
     else:
