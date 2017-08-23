@@ -36,14 +36,14 @@ def getscold():
 
 def getname(member):
     name = str(member)
-    botdb.findmember(member)
-    if name in nicknames:
-        return nicknames[name]
+    mem = botdb.findmember(member)
+    if mem is not None:
+        return mem.nickname
     else:
         return member.display_name
 
 def setnickname(member, nickname):
-    nicknames[str(member)] = nickname
+    botdb.editmember(member, nickname = nickname)
 
 #Relationships
 relations = {
@@ -53,8 +53,8 @@ relations = {
 }
 
 nicknames = {
-'gamingexpx12#8267': 'Boss',
-"Sarim_Cast#6706" : 'El Presidente',
+'gamingexpx12#8267': 'Bosso',
+"Sarim_Cast#6706" : 'El Presidentell',
 }
 
 praise = [
