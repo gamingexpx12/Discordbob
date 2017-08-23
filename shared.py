@@ -12,7 +12,6 @@ class memberdata:
         self.relationship = None
         if rela is not None:
             for name, member in Relation.__members__.items():
-                print(name, member)
                 if rela == name:
                     self.relationship = member
                     break
