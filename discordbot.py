@@ -79,5 +79,4 @@ def goodbye():
     print("sockets closed")
 
 key = clientkey.key
-print(key)
 client.run(key)
