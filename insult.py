@@ -11,7 +11,8 @@ def MakeText():
      "relative" : getrandom(relations),
      "compare" : getrandom(compareobjects),
      "person" : getrandom(people),
-     "disease" : getrandom(diseases)
+     "disease" : getrandom(diseases),
+     "media" : getrandom(media)
      }
 
     return sent.format(**args)
