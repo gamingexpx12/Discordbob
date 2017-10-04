@@ -45,18 +45,6 @@ def getname(member):
 def setnickname(member, nickname):
     botdb.editmember(member, nickname = nickname)
 
-#Relationships
-relations = {
-'gamingexpx12#8267': Relation.friend,
-"Sarim_Cast#6706" : Relation.enemy,
-"Sir_Lagalotやった#5602" : Relation.enemy
-}
-
-nicknames = {
-'gamingexpx12#8267': 'Bosso',
-"Sarim_Cast#6706" : 'El Presidentell',
-}
-
 praise = [
 "Much obliged",
 "I do my best",
